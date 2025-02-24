@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Button } from "@/components/ui/button";
+import GithubIcon from "./icons/Github";
 import {
   NavigationMenu,
   NavigationMenuItem,
@@ -9,16 +9,14 @@ import {
 
 export default function Header() {
   return (
-    <header className="bg-white shadow-sm">
-      <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-        {/* 로고 영역 */}
+    <header className="bg-white shadow-sm fixed top-0 left-0 right-0 w-full z-10">
+      <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         <Link href="/" className="text-2xl font-bold">
-          MyApp
+          HoonDev
         </Link>
 
-        {/* 네비게이션 메뉴 */}
         <NavigationMenu>
-          <NavigationMenuList className="flex space-x-4">
+          <NavigationMenuList className="flex space-x-5">
             <NavigationMenuItem>
               <NavigationMenuLink asChild>
                 <Link href="/about">About</Link>
@@ -26,7 +24,7 @@ export default function Header() {
             </NavigationMenuItem>
             <NavigationMenuItem>
               <NavigationMenuLink asChild>
-                <Link href="/services">Services</Link>
+                <Link href="/portfolio">Portfolio</Link>
               </NavigationMenuLink>
             </NavigationMenuItem>
             <NavigationMenuItem>
@@ -37,8 +35,7 @@ export default function Header() {
           </NavigationMenuList>
         </NavigationMenu>
 
-        {/* CTA 버튼 */}
-        <Button>Get Started</Button>
+        <GithubIcon />
       </div>
     </header>
   );
