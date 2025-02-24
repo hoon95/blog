@@ -2,6 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Pretendard";
+  src: url("/fonts/pretendard/Pretendard-regular.woff2") format("woff2"),
+    url("/fonts/pretendard/Pretendard-regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Pretendard";
+  src: url("/fonts/pretendard/Pretendard-bold.woff2") format("woff2"),
+    url("/fonts/pretendard/Pretendard-bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -17,5 +33,5 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Pretendard, Helvetica, sans-serif;
 }
