@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Header from "@/components/Header";
+import Animate from "@/components/PageAnimate";
 
 export const metadata: Metadata = {
   title: "HoonDev",
@@ -19,7 +20,9 @@ export default function RootLayout({
     <html lang="ko">
       <body>
         <Header />
-        <main className="container px-10 py-24">{children}</main>
+        <Animate>
+          <main className="container px-10 py-24">{children}</main>
+        </Animate>
       </body>
     </html>
   );
