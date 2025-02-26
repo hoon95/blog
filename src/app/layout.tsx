@@ -4,8 +4,8 @@ import Header from "@/components/Header";
 import Animate from "@/components/PageAnimate";
 
 export const metadata: Metadata = {
-  title: "HoonDev",
-  description: "Hoon의 소개 페이지입니다.",
+  title: "HoonLog",
+  description: "hoon의 개인 블로그입니다.",
   icons: {
     icon: "/favicon.svg",
   },
@@ -18,10 +18,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ko">
-      <body>
+      <body className="container mx-auto">
         <Header />
         <Animate>
-          <main className="container px-10 py-24">{children}</main>
+          <main className="px-10 py-32">{children}</main>
         </Animate>
       </body>
     </html>
