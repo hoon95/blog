@@ -1,10 +1,10 @@
 import Image from "next/image";
 import CopyIcon from "@/components/icons/Copy";
-import Typed from "@/components/Type.";
+import Typed from "@/components/Type";
 
 export default function Home() {
   return (
-    <div className="flex justify-center items-center gap-10 h-[70vh]">
+    <div className="flex justify-center items-center gap-10 h-[70vh] z-50">
       <Image src="/favicon.svg" alt="logo" width={200} height={200} />
       <div className="flex flex-col gap-3 max-lg:w-min">
         <div className="flex text-4xl font-bold">

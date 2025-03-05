@@ -1,27 +1,35 @@
-@import url("https://fastly.jsdelivr.net/gh/wanteddev/wanted-sans@v1.0.1/packages/wanted-sans/fonts/webfonts/variable/split/WantedSansVariable.min.css");
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @font-face {
   font-family: "Pretendard";
-  src: url("/fonts/pretendard/Pretendard-regular.woff2") format("woff2"),
-    url("/fonts/pretendard/Pretendard-regular.woff") format("woff");
-  font-weight: 400;
+  src: url("/fonts/pretendard/Pretendard-regular.woff2") format("woff2");
   font-style: normal;
 }
 
 @font-face {
   font-family: "Pretendard";
-  src: url("/fonts/pretendard/Pretendard-bold.woff2") format("woff2"),
-    url("/fonts/pretendard/Pretendard-bold.woff") format("woff");
+  src: url("/fonts/pretendard/Pretendard-bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "WantedSansStd";
+  src: url("/fonts/wanted/WantedSansStd-Regular.woff2") format("woff2");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "WantedSansStd";
+  src: url("/fonts/wanted/WantedSansStd-Bold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
 }
 
 body {
-  font-family: "WantedSansVariable", Pretendard, sans-serif !important;
+  font-family: "WantedSansStd", Pretendard, sans-serif !important;
 }
 
 @layer base {
